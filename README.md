@@ -5,6 +5,8 @@
 
 A web application that enables users to upload PDF documents, extract text content, generate summaries, and ask questions about the content using Mistral AI's powerful language model. The application features a FastAPI backend for robust API handling and a user-friendly Streamlit frontend interface.
 
+Project Demo Link Video: [Drive Link](https://drive.google.com/file/d/1oj0LHsYCn7FVxzbxr-2IQErs7-Tzg6nA/view?usp=sharing)
+
 ## Project Tree:
 
 ```
@@ -198,5 +200,4 @@ The application handles various error scenarios:
 
 Your Name - [saivivekred@gmail.com](mailto:saivivekred@gmail.com)
 
-Project Demo Link: [Drive Link](https://drive.google.com/file/d/1oj0LHsYCn7FVxzbxr-2IQErs7-Tzg6nA/view?usp=sharing)
 
