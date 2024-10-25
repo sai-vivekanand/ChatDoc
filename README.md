@@ -198,5 +198,5 @@ The application handles various error scenarios:
 
 Your Name - [saivivekred@gmail.com](mailto:saivivekred@gmail.com)
 
-Project Demo Link: [https://drive.google.com/file/d/1oj0LHsYCn7FVxzbxr-2IQErs7-Tzg6nA/view?usp=sharing](https://drive.google.com/file/d/1oj0LHsYCn7FVxzbxr-2IQErs7-Tzg6nA/view?usp=sharing)
+Project Demo Link: [Drive Link](https://drive.google.com/file/d/1oj0LHsYCn7FVxzbxr-2IQErs7-Tzg6nA/view?usp=sharing)
 
