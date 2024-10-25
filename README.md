@@ -1,8 +1,21 @@
 # PDF Analysis with Mistral AI
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Mistral AI](https://img.shields.io/badge/Mistral_AI-black?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMiAyTDIgN2wxMCA1IDEwLTV6Ii8+PHBhdGggZD0iTTIgMTdsMTAgNSAxMC01Ii8+PHBhdGggZD0iTTIgMTJsMTAgNSAxMC01Ii8+PC9zdmc+)](https://mistral.ai)
 
 A web application that enables users to upload PDF documents, extract text content, generate summaries, and ask questions about the content using Mistral AI's powerful language model. The application features a FastAPI backend for robust API handling and a user-friendly Streamlit frontend interface.
 
 ## Project Tree:
+
+```
+.
+├── README.md
+├── backend
+│   └── main.py
+├── frontend
+│   └── app.py
+└── requirements.txt
+```
 
 ## Architechture Diagram:
 ![pdf_analysis_with_mistral_ai](https://github.com/user-attachments/assets/9fa5e73d-e06d-4645-a07a-4f2f99d1d787)
@@ -47,8 +60,8 @@ A web application that enables users to upload PDF documents, extract text conte
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/yourusername/pdf-analysis.git
-cd pdf-analysis
+git clone git@github.com:sai-vivekanand/ChatDoc.git
+cd ChatDoc
 ```
 
 2. **Create a virtual environment**:
@@ -64,28 +77,22 @@ source venv/bin/activate
 
 3. **Install dependencies**:
 
-For backend:
 ```bash
-cd backend
-pip install -r requirements.txt
-```
-
-For frontend:
-```bash
-cd frontend
+cd ChatDoc
 pip install -r requirements.txt
 ```
 
 4. **Set up environment variables**:
 
-Create a `.env` file in both backend and frontend directories:
+Create a `.env` file in root directory (ChatDoc):
 
 ```env
-# Backend .env
 MISTRAL_API_URL=https://api.mistral.ai/v1/chat/completions
 MISTRAL_API_KEY=your_mistral_api_key
-
-# Frontend .env
+MAX_CHUNK_SIZE=4000  # Adjust based on your needs
+MAX_FILE_SIZE=209715200  # 200MB in bytes
+RATE_LIMIT_DELAY=1
+MAX_RETRIES=3
 API_URL=http://localhost:8000
 ```
 
